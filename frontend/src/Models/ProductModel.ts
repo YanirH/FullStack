@@ -1,13 +1,14 @@
 export class ProductModel {
-	id!: number
+	id?: number
     name!: string
     price!: number
     stock!: number
-    categoryId!: number
-    supplierId!: number
-    quantity!: string
-    imageName!: string
-    imageUrl!: string
+    categoryId?: number
+    supplierId?: number
+    quantity?: string
+    imageName?: string
+    imageUrl?: string
+    public image?: File;
 
     // public constructor(product: ProductModel) {
     //     this.id = product.id
