@@ -33,8 +33,8 @@ export function AddProduct(): JSX.Element {
                 <label>Price: </label>
                 <input  placeholder="0.." type="number" {...register('price')} required min={2} max={100}/>
                 <label>stock: </label>
-                <input  placeholder='0..' type="number" {...register('stock')} required min={2} max={100}/>
-                <label>Image: </label>
+                {/* <input  placeholder='0..' type="number" {...register('stock')} required min={2} max={100}/>
+                <label>Image: </label> */}
                 <input type="file" accept="image/*" {...register('image')}  /> 
                 <button type="submit">Add Product</button>
             </form>
