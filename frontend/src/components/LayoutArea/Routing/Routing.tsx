@@ -5,6 +5,8 @@ import { ProductList } from "../../ProductArea/ProductList/ProductList";
 import { About } from "../../AboutArea/About/About";
 import { Page404 } from "../page404/page404";
 import { AddProduct } from "../../ProductArea/AddProduct/AddProduct";
+import { Register } from "../../UserArea/Register/Register";
+import { Login } from "../../UserArea/Login/Login";
 
 export function Routing(): JSX.Element {
     return (
@@ -15,6 +17,8 @@ export function Routing(): JSX.Element {
                 <Route path="/products" element={<ProductList/>} />
                 <Route path="/about" element={<About/>} />
                 <Route path="/add-product" element={<AddProduct/>} />
+                <Route path="/register" element={<Register/>} />
+                <Route path="/login" element={<Login/>} />
                 <Route path="*" element={<Page404/>}/>
             </Routes>
         </div>

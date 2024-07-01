@@ -18,6 +18,7 @@ class ProductService {
         try {
             const options: AxiosRequestConfig = {headers: {"Content-Type": "multipart/form-data"}}
             const response = await axios.post<ProductModel>(appConfig.addProductUrl, product, options);
+            if(!store.getState().products) return
             const addedProduct = response.data
             const action = productAction.addProduct(addedProduct)
             store.dispatch(action)

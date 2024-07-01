@@ -1,9 +1,8 @@
-import { useState } from "react";
-import "./AddProduct.css";
-import { ProductModel } from "../../../Models/ProductModel";
-import { productService } from "../../../Services/ProductService";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { ProductModel } from "../../../Models/ProductModel";
+import { productService } from "../../../Services/ProductService";
+import "./AddProduct.css";
 
 export function AddProduct(): JSX.Element {
     
